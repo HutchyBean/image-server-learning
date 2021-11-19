@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="./webpage/css/index.css">
+  </head>
+  <body>
+	<div class="header">
+        <h1>Logo</h1>
+        <form action="/images" method="GET">
+            <input class="search-bar" placeholder="Search..." type="search" name="term">
+        </form>
+        <div class="header-tabs">
+            
+            <a href="/" class="header-button">
+                <span>Home</span>
+            </a>
+            <a href="/images" class="header-button">
+                <span>Images</span>
+            </a>
+            <a id="login-button" href="/login" class="header-button">
+                <span>Login</span>
+            </a>
+        </div>
+       
+    </div>
+
+    <div class="main-page">
+           <form action="/api/login" method="post" class="login-form">
+                <h1>Login</h1>
+                <input type="text" placeholder="Username" name="username"/>
+                
+                <input type="password" placeholder="Password" name="password"/>
+                <input type="submit"/>
+            </form>
+       </div>
+  </body>
+</html>
